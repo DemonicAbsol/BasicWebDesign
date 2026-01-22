@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title> Busy Day Schedule</title>
+
+    <style>
+        body {
+            background-color: #f0f4f8;
+        }
+
+        /* Table styling */
+        table {
+            width: 80%;
+            margin: 40px auto;
+            border-collapse: collapse;
+            font-family: Arial, sans-serif;
+            background-color: #ffffff;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        /* Table header styling */
+        th {
+            background-color: #2c7be5;
+            color: white;
+            padding: 14px;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        /* All table cells */
+        td {
+            padding: 12px;
+            border: 1px solid #ddd;
+            text-align: center;
+        }
+
+        /* Style a specific column */
+        .time-column {
+            background-color: #eef4ff;
+            font-weight: bold;
+            width: 25%;
+        }
+
+        /* Style a specific row */
+        .highlight-row {
+            background-color: #ffffff;
+        }
+
+        /* Hover effect */
+        tr:hover {
+            background-color: #e9f2ff;
+        }
+
+        /* Title styling */
+        #schedule-title {
+            text-align: center;
+            font-family: Arial, sans-serif;
+            margin-top: 30px;
+            color: #333;
+        }
+    </style>
+</head>
+
+<body>
+
+<h1 id="schedule-title">My Busiest Schedule</h1>
+
+<table>
+    <tr>
+        <th>Time</th>
+        <th>Activity</th>
+    </tr>
+
+    <tr>
+        <td class="time-column">6:30 AM</td>
+        <td>Wake up and get ready for schoowork</td>
+    </tr>
+
+    <tr>
+        <td class="time-column">8:00 AM</td>
+        <td>Schoolwork Time</td>
+    </tr>
+
+    <tr class="highlight-row">
+        <td class="time-column">3:00 PM</td>
+        <td>Esports Club afterschool meeting</td>
+    </tr>
+
+    <tr>
+        <td class="time-column">4:30 PM</td>
+        <td>Dinner with Dad</td>
+    </tr>
+
+    <tr>
+        <td class="time-column">6:30 PM</td>
+        <td>Counseling</td>
+    </tr>
+
+    <tr>
+        <td class="time-column">7:30 PM</td>
+        <td>Homework and studying</td>
+    </tr>
+
+    <tr class="highlight-row">
+        <td class="time-column">9:00 PM</td>
+        <td>Playing games</td>
+    </tr>
+
+    <tr>
+        <td class="time-column">12:00 AM</td>
+        <td>Watching Youtube to settle down</td>
+    </tr>
+
+    <tr>
+        <td class="time-column">1:30 AM</td>
+        <td>Get ready for bed</td>
+    </tr>
+</table>
+
+</body>
+</html>
