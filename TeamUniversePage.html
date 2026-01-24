@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Team Page</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background: #f4f4f4;
+    }
+
+    /* Navigation */
+    nav {
+      background: #333;
+      color: white;
+      padding: 10px;
+      text-align: center;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      margin: 0 15px;
+      font-weight: bold;
+    }
+
+    nav a:hover {
+      text-decoration: underline;
+    }
+
+    /* Header */
+    header {
+      text-align: center;
+      padding: 20px;
+    }
+
+    /* Team container */
+    .team-container {
+      width: 90%;
+      margin: 0 auto;
+      overflow: auto; /* clears floats */
+    }
+
+    /* Team member cards */
+    .member {
+      width: 45%;
+      background: white;
+      margin: 10px;
+      padding: 10px;
+      float: left; /* float property */
+      box-shadow: 0 0 5px rgba(0,0,0,0.1);
+      position: relative;
+    }
+
+    /* Profile layout for Arceus */
+    .member.profile {
+      height: 180px;
+    }
+
+    .profile-pic {
+      float: left;
+      width: 35%;
+      height: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .profile-pic img {
+      width: 100px;
+      height: 100px;
+      border-radius: 50%;
+      border: 3px solid #ffcc00;
+      background: white;
+      object-fit: cover;
+      object-position: center center; /* keep full head visible */
+    }
+
+    .profile-text {
+      float: left;
+      width: 60%;
+      padding-left: 15px;
+    }
+
+    .member.profile h3 {
+      margin-top: 0;
+    }
+
+    .member img {
+      width: 100%;
+      height: auto;
+      display: block;
+    }
+
+    .member img {
+      width: 100%;
+      height: auto;
+      display: block;
+    }
+
+    .member h3 {
+      margin: 10px 0 5px;
+    }
+
+    .member p {
+      margin: 0;
+    }
+
+    /* Position property */
+    .badge {
+      position: absolute;
+      top: 10px;
+      right: 10px;
+      background: #ff4d4d;
+      color: white;
+      padding: 5px 10px;
+      font-weight: bold;
+      border-radius: 5px;
+    }
+
+    /* Make it responsive */
+    @media (max-width: 700px) {
+      .member {
+        width: 100%;
+        float: none;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <nav>
+    <a href="#">Home</a>
+    <a href="#">Projects</a>
+    <a href="#">About</a>
+    <a href="#">Contact</a>
+  </nav>
+
+  <header>
+    <h1>Team Universe</h1>
+    <p>Meet the team members who make everything possible.</p>
+  </header>
+
+  <div class="team-container">
+
+    <div class="member profile">
+      <div class="badge">Creator</div>
+      <div class="profile-pic">
+        <img src="https://assets.pokemon.com/assets/cms2/img/pokedex/full/493.png" alt="Arceus" onerror="this.src='https://via.placeholder.com/100'">
+      </div>
+      <div class="profile-text">
+        <h3>Arceus</h3>
+        <p>As the creator of Team Universe, Arceus leads with quiet confidence and a strong sense of responsibility. It adapts to every situation, changing its form when needed to protect the balance of the world.</p>
+      </div>
+    </div>
+
+    <div class="member profile">
+      <div class="badge">Abyssal Engineer</div>
+      <div class="profile-pic">
+        <img src="https://assets.pokemon.com/assets/cms2/img/pokedex/full/487.png" alt="Giratina" onerror="this.src='https://via.placeholder.com/100'">
+      </div>
+      <div class="profile-text">
+        <h3>Giratina</h3>
+        <p>Giratina prefers solitude and thrives in places where reality feels stretched. It’s calm, mysterious, and always watching for threats to the world’s stability—especially when things become too orderly or controlled.</p>
+      </div>
+    </div>
+
+    <div class="member profile">
+      <div class="badge">Time Tracker</div>
+      <div class="profile-pic">
+        <img src="https://assets.pokemon.com/assets/cms2/img/pokedex/full/483.png" alt="Dialga" onerror="this.src='https://via.placeholder.com/100'">
+      </div>
+      <div class="profile-text">
+        <h3>Dialga</h3>
+        <p>Dialga is focused, disciplined, and always aware of how time flows. It keeps the team on schedule and can slow down or speed up progress when needed, making sure nothing falls behind.</p>
+      </div>
+    </div>
+
+    <div class="member profile">
+      <div class="badge">Space Shifter</div>
+      <div class="profile-pic">
+        <img src="https://assets.pokemon.com/assets/cms2/img/pokedex/full/484.png" alt="Palkia" onerror="this.src='https://via.placeholder.com/100'">
+      </div>
+      <div class="profile-text">
+        <h3>Palkia</h3>
+        <p>Palkia is bold, confident, and always thinking about the bigger picture. It has a strong sense of direction and can reshape space to help the team move forward, even when obstacles appear impossible.</p>
+      </div>
+    </div>
+
+  </div>
+
+</body>
+</html>
