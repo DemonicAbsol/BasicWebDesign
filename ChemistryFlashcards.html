@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Flashcard Review</title>
+<style>
+  body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(135deg, #1e3c72, #2a5298);
+    margin: 0;
+    padding: 20px;
+    color: white;
+    overflow-x: hidden;
+  }
+
+  /* Page title animation */
+  h1 {
+    text-align: center;
+    margin-bottom: 40px;
+    font-size: 2.5em;
+    animation: titleFade 1.5s ease-out forwards;
+    opacity: 0;
+  }
+
+  @keyframes titleFade {
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+    from {
+      opacity: 0;
+      transform: translateY(-20px);
+    }
+  }
+
+  /* Card layout */
+  .card-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 20px;
+    max-width: 1100px;
+    margin: 0 auto;
+  }
+
+  /* Card style */
+  .card {
+    background: rgba(255, 255, 255, 0.1);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    border-radius: 15px;
+    padding: 20px;
+    height: 180px;
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
+    transition: transform 0.4s ease;
+  }
+
+  .card:hover {
+    transform: translateY(-8px);
+  }
+
+  .question {
+    font-size: 1.1em;
+    font-weight: bold;
+  }
+
+  /* Answer reveal */
+  .answer {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(0, 0, 0, 0.6);
+    padding: 15px;
+    transform: translateY(100%);
+    opacity: 0;
+    transition: transform 0.5s ease, opacity 0.5s ease;
+  }
+
+  .card:hover .answer {
+    transform: translateY(0);
+    opacity: 1;
+  }
+</style>
+</head>
+<body>
+
+<h1>Flashcard Review</h1>
+
+<div class="card-container">
+  <div class="card">
+    <div class="question">What is an ionic bond?</div>
+    <div class="answer">A bond formed when electrons are transferred from one atom to another.</div>
+  </div>
+
+  <div class="card">
+    <div class="question">What is the atomic number?</div>
+    <div class="answer">The number of protons in an atom's nucleus.</div>
+  </div>
+
+  <div class="card">
+    <div class="question">What is a valence electron?</div>
+    <div class="answer">An electron in the outermost energy level of an atom.</div>
+  </div>
+
+  <div class="card">
+    <div class="question">What is an anion?</div>
+    <div class="answer">A negatively charged ion formed when an atom gains electrons.</div>
+  </div>
+
+  <div class="card">
+    <div class="question">What is a cation?</div>
+    <div class="answer">A positively charged ion formed when an atom loses electrons.</div>
+  </div>
+
+  <div class="card">
+    <div class="question">What is electronegativity?</div>
+    <div class="answer">The ability of an atom to attract electrons in a bond.</div>
+  </div>
+
+  <div class="card">
+    <div class="question">What is a covalent bond?</div>
+    <div class="answer">A bond formed when atoms share electrons.</div>
+  </div>
+
+  <div class="card">
+    <div class="question">What is a period on the periodic table?</div>
+    <div class="answer">A horizontal row of elements.</div>
+  </div>
+</div>
+
+</body>
+</html>
